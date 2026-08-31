@@ -1,0 +1,60 @@
+{
+  "name": "pi-strict-ask-mode",
+  "version": "0.1.0",
+  "description": "为 Pi 提供严格只读 /ask 模式，仅允许 read、grep、find、ls。",
+  "type": "module",
+  "license": "MIT",
+  "author": "Liu Shiyu",
+  "homepage": "https://github.com/liush2yuxjtu/pi-strict-ask-mode#readme",
+  "bugs": {
+    "url": "https://github.com/liush2yuxjtu/pi-strict-ask-mode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liush2yuxjtu/pi-strict-ask-mode.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "ask-mode",
+    "read-only",
+    "readonly",
+    "safety"
+  ],
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
+    "pack:check": "npm pack --dry-run --json"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/ask-mode.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.4",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  }
+}
