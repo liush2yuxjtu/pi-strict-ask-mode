@@ -1,6 +1,6 @@
 {
   "name": "pi-strict-ask-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "为 Pi 提供严格只读 /ask 模式，仅允许 read、grep、find、ls。",
   "type": "module",
   "license": "MIT",
