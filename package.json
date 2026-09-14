@@ -38,7 +38,7 @@
   },
   "pi": {
     "extensions": [
-      "./extensions/ask-mode.ts"
+      "./extensions/usage-entry.ts"
     ]
   },
   "publishConfig": {
