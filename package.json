@@ -1,6 +1,6 @@
 {
   "name": "pi-strict-ask-mode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "为 Pi 提供严格只读 /ask 模式，仅允许 read、grep、find、ls。",
   "type": "module",
   "license": "MIT",
@@ -56,5 +56,8 @@
     "@earendil-works/pi-coding-agent": "^0.84.4",
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "@nyn5255/telemetry": "^0.1.1"
   }
 }
